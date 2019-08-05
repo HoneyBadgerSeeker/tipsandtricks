@@ -1,0 +1,18 @@
+import org.mapstruct.AfterMapping;
+import org.mapstruct.BeforeMapping;
+import org.mapstruct.MappingTarget;
+
+public class EntityBContext {
+
+    private EntityBDTO EntityBDTO;
+
+    @BeforeMapping
+    public void setDTO(@MappingTarget EntityBDTO EntityBDTO) {
+        this.EntityBDTO = EntityBDTO;
+    }
+
+    @AfterMapping
+    public void establishRelation(@MappingTarget EntityADTO entityA) {
+        entityA.setEntityB( EntityBDTO );
+    }
+}

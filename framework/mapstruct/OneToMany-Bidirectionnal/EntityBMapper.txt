@@ -1,0 +1,17 @@
+import org.mapstruct.Context;
+import org.mapstruct.Mapper;
+import org.mapstruct.Mapping;
+
+import static org.mapstruct.ReportingPolicy.IGNORE;
+
+@Mapper(componentModel = "spring", uses = {
+    EntityAMapper.class,
+    SubEntityMapper.class
+}
+    , unmappedTargetPolicy = IGNORE)
+public abstract class EntityBMapper implements EntityMapper<EntityBDTO, EntityB> {
+    @Mapping(source = "entityB.id", target = "id")
+    @Mapping(source = "refOtherEntity", target = "otherEntity")
+    @Mapping(target = "entityA.entityB", ignore = true) // important
+    public abstract EntityBDTO toDto(EntityB entityB, RefOtherEntityDTO refOtherEntity, @Context EntityBContext ctx);
+}

@@ -1,0 +1,12 @@
+When the tablespace of 32go is enough, you have to switch to bigfile.
+
+ALTER TABLESPACE RMS_MY_APP_DATA RENAME TO RMS_MY_APP_DATA_OLD;
+ALTER TABLESPACE RMS_MY_APP_DATA_OLD OFFLINE NORMAL;
+CREATE BIGFILE TABLESPACE RMS_MY_APP_DATA DATAFILE '/io/oradata/ENVIR/RMS_MY_APP_DATA_BG_01.dbf' SIZE 40G;
+DROP TABLESPACE RMS_MY_APP_DATA_OLD;
+
+If there is not enough room to create the large file directly.
+Rename and make in offline the old tablespace
+Delete the old tablespace with the command "rm" directly on the machine.
+Restart the oracle instance.
+Create the bigfile.

@@ -1,2 +1,3 @@
-# tipsandtricks
-Sheet cheat
+# Tips and tricks
+
+Welcome to my sheet cheat :)

@@ -1,0 +1,24 @@
+import org.mapstruct.AfterMapping;
+import org.mapstruct.BeforeMapping;
+import org.mapstruct.MappingTarget;
+
+public class EntityAContext {
+
+    private final SubEntityToAddPostMappingDTO SubEntityToAddPostMappingDTO;
+    private EntityADTO EntityADTO;
+
+    public EntityAContext(SubEntityToAddPostMappingDTO SubEntityToAddPostMappingDTO) {
+        this.SubEntityToAddPostMappingDTO = SubEntityToAddPostMappingDTO;
+    }
+
+    @BeforeMapping
+    public void setDTO(@MappingTarget EntityADTO EntityADTO) {
+        this.EntityADTO = EntityADTO;
+    }
+
+    @AfterMapping
+    public void establishRelation(@MappingTarget ProcessDTO processDTO) {
+        processDTO.setEntityA( EntityADTO );
+        processDTO.setWave(SubEntityToAddPostMappingDTO);
+    }
+}

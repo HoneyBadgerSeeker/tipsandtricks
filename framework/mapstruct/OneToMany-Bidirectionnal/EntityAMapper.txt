@@ -1,0 +1,19 @@
+import org.mapstruct.Context;
+import org.mapstruct.Mapper;
+import org.mapstruct.Mapping;
+
+import static org.mapstruct.ReportingPolicy.IGNORE;
+
+@Mapper(componentModel = "spring",
+    uses = {EntityAGroupMapper.class,
+            EntityAPlacementMapper.class,
+            EntityBMapper.classs},
+    unmappedTargetPolicy = IGNORE)
+public abstract class EntityAMapper implements EntityMapper<EntityADTO, EntityA> {
+
+    @Mapping(source = "entityA.id", target = "id")
+    @Mapping(target = "process.entityA", ignore = true) // important
+    @Mapping(target = "process.subEntityToAddPostMapping", ignore = true) // important
+    public abstract EntityADTO toDto(EntityA EntityA, @Context EntityAContext ctx);
+
+}
