@@ -1,0 +1,14 @@
+New user
+
+sudo su 
+useradd -m user
+passwd user
+chown -R user:user /opt/dev/user_serv
+chsh -s /bin/bash user
+
++ .bash_profile 
+". ~/.profile
+PS1="user@$(hostname):\$PWD #";export PS1"
+
++ bash_rc 
+export JAVA_HOME="/home/user/aojdk_8u202b08"
