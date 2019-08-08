@@ -1,0 +1,4 @@
+context.xml => remove protection 127.0.0.1
+role tomcat-user: manager-script only
+curl -i -X PUT -u user:user http://host.m6:8282/manager/text/deploy?path=/stapof --upload-file stapof##1.0-0-SNAPSHOT.war
+ // sh "scp -rp user@host:/home/user/stapof##1.0.0-0-SNAPSHOT.war ./target"
