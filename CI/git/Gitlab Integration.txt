@@ -1,0 +1,20 @@
+http://host:port/xx/yy/settings/integrations
+
+
+Trigger
+
+    Push events
+
+    This URL will be triggered by a push to the repository 
+
+
+SSL verification
+Enable SSL verification
+
+
+ Webhooks (1)
+
+http://jenkinshost:port/project/XX-World/XX-Pipeline
+Push Events Merge Requests Events
+SSL Verification: enabled Edit 
+
