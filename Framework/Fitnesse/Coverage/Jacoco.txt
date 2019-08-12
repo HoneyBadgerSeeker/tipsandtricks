@@ -1,0 +1,4 @@
+Fitnesse command:
+!define COMMAND_PATTERN (java -javaagent:C:/Git/fitnesse/jacocoagent.jar -cp %p com.myapp.fixture.config.slim.MyAppSlimService)
+
+Download and unzip Jacoco https://mvnrepository.com/artifact/org.jacoco/org.jacoco.agent
