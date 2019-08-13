@@ -1,3 +1,3 @@
 # Oracle
 
-Welcome to my sheet cheat :)
+Welcome to my cheat sheet :)

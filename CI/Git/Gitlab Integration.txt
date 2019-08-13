@@ -14,7 +14,7 @@ Enable SSL verification
 
  Webhooks (1)
 
-http://jenkinshost:port/project/XX-World/XX-Pipeline
+http://jenkinshost:port/project/XX/XX-Pipeline
 Push Events Merge Requests Events
 SSL Verification: enabled Edit 
 
