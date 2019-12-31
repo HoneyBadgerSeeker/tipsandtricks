@@ -1,0 +1,8 @@
+git bisect start
+git bisect good <commit>
+git bisect bad <commit> or master
+git bisect run mvn -pl projectName -amd -Dgwt.compiler.skip=true -DfailIfNoTests=false -Dtest=<testName> test
+
+Ex:
+Git bisect run mvn -pl projectName -amd -Dgwt.compiler.skip=true -DfailIfNoTests=false –Dtest=com.bla.blo.bli.ejb.domain.subdomain.classNameEJBTest test
+git bisect reset 
