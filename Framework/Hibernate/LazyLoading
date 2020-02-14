@@ -1,0 +1,5 @@
+https://discourse.hibernate.org/t/hibernate-n-1-query-issue-when-fetching-onetoone-associations-with-jpa-criteria-and-lazytoone/2037
+
+Hibernate, by default, consider all *ToOne relations, as EAGER and the only way to configure *ToOne with Lazy loading is to use the annotation @LazyToOne(LazyToOneOption.NO_PROXY) in conjunction with hibernate compile instrumentation.
+
+That’s only true for parent-side @OneToOne(mappedBy="parent"). Client-side @OneToOne and @ManyToOne can be load lazily by setting the fetch attribute to FetchType.LAZY.
