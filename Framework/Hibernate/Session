@@ -1,0 +1,1 @@
+((SessionImplementor)entityManager.unwrap(Session.class)).getPersistenceContext().reentrantSafeEntityEntries()
