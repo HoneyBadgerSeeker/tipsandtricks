@@ -1,4 +1,6 @@
-ORA-00838: Specified value of MEMORY_TARGET is too small, needs to be at least 22912M
+Sharepoolesized error => increase both value of *.shared_pool_size=273741824 and *.memory_target=3500000000 in init.ora
+
+ORA-00838: Specified value of MEMORY_TARGET is too small, needs to be at least 22912M 
 
 C:\oracle\>sqlplus / as sysdba
 
