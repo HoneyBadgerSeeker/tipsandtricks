@@ -1,2 +1,2 @@
 Chrome console filter
-   -/(platform-browser)/ 
+   -platform-browser
