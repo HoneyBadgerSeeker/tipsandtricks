@@ -6,7 +6,7 @@ public class WebApplicationConfiguration implements WebMvcConfigurer {
 
     @Override
     public void addViewControllers(ViewControllerRegistry registry) {
-        registry.addRedirectViewController("/", "/index.html");
+        registry.addRedirectViewController("/", "/index.html"); // and NOT registry.addViewController("/").setViewName("forward:/index.html");
     }
 
 }
