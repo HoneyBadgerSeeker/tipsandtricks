@@ -8,5 +8,5 @@ try (var imgstream = session.theme().getTheme(Theme.Type.EMAIL).getResourceAsStr
 var path = System.getProperty("user.dir") + "/themes/" +  session.theme().getTheme(Theme.Type.EMAIL).getName() + "/" + Theme.Type.EMAIL.name().toLowerCase() + "/resources";
 Path.of(path + "/img/name.png").toUri().toURL()
 
-# Get provider name (use for adding property to keycloak.conf)
+# Get provider name (used for adding property to keycloak.conf)
 Go to the Spi definition (org.keycloak.authentication.AuthenticatorSpi#getName)
