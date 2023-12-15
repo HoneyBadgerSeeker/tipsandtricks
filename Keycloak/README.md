@@ -1,4 +1,4 @@
-![image](https://github.com/HoneyBadgerSeeker/tipsandtricks/assets/3001459/e04b2c55-e1f8-4677-af1b-51e72afcec39)# Roundcube <-> Keycloak trough IDP
+# Roundcube <-> Keycloak
 Oauth connexion failed => add FIRST_NAME, LAST_NAME and EMAIL attribute to the UserModel
 
 # Access ressource 
