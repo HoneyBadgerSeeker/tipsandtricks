@@ -12,6 +12,7 @@ Path.of(path + "/img/name.png").toUri().toURL()
 Go to the Spi definition (org.keycloak.authentication.AuthenticatorSpi#getName)
 
 # Load keycloak.conf properties
-spi-authenticator-<spi-id>-<propertyName>=<value>
+spi-authenticator-_spiId_-_propertyName_=_value_
+
 Usually config are loaded in the init() method of the Factory but for some reason on Keycloak 22, if a property is missing, KC freeze its launch and does not create log.
 Loading the property in the postInit() method made us able to throw RuntimeException to alert on missing property and stop the launch of KC.
