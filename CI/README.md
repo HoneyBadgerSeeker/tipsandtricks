@@ -11,7 +11,7 @@
                 <artifactId>maven-surefire-plugin</artifactId>
                 <version>3.2.3</version>
                 <configuration>
-                    <!-- Without this parameter, jacoco.exec is not generated. Mayby due to surfire overriding some JVM argument  -->
+                    <!-- Without this parameter, jacoco.exec is not generated. Mayby due to surefire overriding some JVM argument  -->
                     <argLine>${argLine}</argLine>
                 </configuration>
             </plugin>
