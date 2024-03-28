@@ -16,3 +16,7 @@ spi-authenticator-_spiId_-_propertyName_=_value_
 
 Usually config are loaded in the init() method of the Factory but for some reason on Keycloak 22, if a property is missing, KC freeze its launch and does not create log.
 Loading the property in the postInit() method made us able to throw RuntimeException to alert on missing property and stop the launch of KC.
+
+# Access IDP Token
+keycloakSession.users().getFederatedIdentity(keycloakSession.getContext().getRealm(), userModel, "identityProviderName").getToken()
++ might need to activate "Store tokens" inside provider config
