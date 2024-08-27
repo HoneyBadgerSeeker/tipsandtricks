@@ -7,7 +7,7 @@
     "editor.minimap.showSlider": "always",
     "editor.fontFamily": "'JetBrains Mono'",
     "editor.fontLigatures": true,
-    "editor.fontWeight": "400",
+    "editor.fontWeight": "380",
     "editor.lineHeight": 23,
     "workbench.colorCustomizations": {
         "editor.background": "#F4F4F4",
