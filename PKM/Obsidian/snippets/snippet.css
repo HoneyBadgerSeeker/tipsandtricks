@@ -1,0 +1,7 @@
+.theme-light {
+    --background-primary: #f8f8f8;
+    --background-secondary: #f8f8f8;
+    --code-background: #d5dabfb0;
+    --table-border-width: 2px;
+    --table-border-color: #bcbcbc;
+  }

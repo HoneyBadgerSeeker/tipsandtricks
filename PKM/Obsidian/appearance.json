@@ -1,0 +1,11 @@
+{
+  "theme": "moonstone",
+  "cssTheme": "",
+  "textFontFamily": "JetBrains Mono",
+  "monospaceFontFamily": "jetb",
+  "enabledCssSnippets": [
+    "snippet"
+  ],
+  "interfaceFontFamily": "JetBrains Mono",
+  "baseFontSize": 14
+}
